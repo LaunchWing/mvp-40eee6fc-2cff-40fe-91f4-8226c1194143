@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuMagic AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 flex items-center justify-between">
+        <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-BmVW3mXCADZB1bm7qQaoq9aJ.png?st=2025-08-05T23%3A23%3A21Z&se=2025-08-06T01%3A23%3A21Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=cc612491-d948-4d2e-9821-2683df3719f5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-05T19%3A56%3A22Z&ske=2025-08-06T19%3A56%3A22Z&sks=b&skv=2024-08-04&sig=/k11EBUlSTsLPXTcgxYozI390oTPm8gf4vXIALp8CPA%3D" alt="ResuMagic AI Logo" class="h-12">
+        <h1 class="text-white text-xl font-bold">ResuMagic AI</h1>
+    </header>
+    <main class="container mx-auto mt-10 p-4">
+        <section class="text-center mb-8">
+            <h2 class="text-2xl font-semibold text-blue-700">Crafting Resumes with Precision and Style</h2>
+            <p class="text-gray-700 mt-2">Let our AI help you create a professional resume tailored to your career needs.</p>
+        </section>
+        <section class="bg-white p-6 rounded shadow-md max-w-lg mx-auto">
+            <form id="resumeForm" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-gray-700">Full Name</label>
+                    <input type="text" id="name" class="w-full mt-1 p-2 border border-gray-300 rounded" placeholder="John Doe" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" class="w-full mt-1 p-2 border border-gray-300 rounded" placeholder="john.doe@example.com" required>
+                </div>
+                <div>
+                    <label for="careerField" class="block text-gray-700">Career Field</label>
+                    <input type="text" id="careerField" class="w-full mt-1 p-2 border border-gray-300 rounded" placeholder="Software Engineering" required>
+                </div>
+                <button type="submit" class="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600">Generate Resume</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
